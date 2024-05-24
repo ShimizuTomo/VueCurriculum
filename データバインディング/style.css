@@ -1,0 +1,11 @@
+td{
+	border: solid 1px black;
+}
+
+.red{
+	background-color: red;
+}
+
+.bold{
+	font-weight: bold;
+}
