@@ -20,14 +20,22 @@ const atag = `
 let holiday =  true;
 
 let array = [
-    { text: 'JavaScriptの学習' },
-    { text: 'Vueの学習' },
-    { text: '実践あるのみ' }
+    { text: 'JavaScriptの学習', checked: false },
+    { text: 'Vueの学習', checked: false },
+    { text: '実践あるのみ', checked: false }
 ];
 
 new Vue({
     el: '#app',
     data: {
-      message: 'Hello World!'
+      message: 'Hello World!',
+      atag: atag,
+      holiday: holiday,
+      array: array
+    },
+    methods: {
+        toggleCheck(item) {
+            item.checked = !item.checked;
+        }
     }
   });
